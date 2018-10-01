@@ -27,3 +27,23 @@ function completeListItem(item) {
     }
 }
 
+
+
+
+
+$(document).on("click", "#add-item", function() { // bind handler for click event
+    var list = $("#grocery-list"); // get the ol list by id
+    var itemInput = $("#new-list-item"); // get the new item input
+  // append the input value within an li element
+    list.append("<li>" + itemInput.val() + " <button class='delete-item'>X</button></li>"); 
+});
+
+
+
+
+$(document).on("click", ".delete-item", function() {
+    $(this).parent().remove();
+    console.log("test");
+});
+
+
