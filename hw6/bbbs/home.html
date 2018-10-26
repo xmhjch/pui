@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="home.css">
+	<title>Bun Bun Bake Shop</title>
+	<!-- jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- javascript -->
+    <script src="main.js"></script>
+</head>
+<body>
+	<!--The header for all the pages-->
+	<div class = "header" id = "topHeader" >
+		<div class = "topimg">
+			<a href="home.html">
+				<img src="res/title.png" alt="titlebar">
+			</a>
+		</div>
+		
+		<div class = "topButtons">
+			<a href="home.html" class="topButton" id = "tb_home">HOME</a>
+			<a href="shop.html" class="topButton bghover" id = "tb_shop">SHOP</a>
+			<a href="about.html" class="topButton bghover" id = "tb_about">ABOUT</a>
+			<a href="contact.html" class="topButton bghover" id = "tb_contact">CONTACT</a>			
+		</div>
+
+		<div class = "cartT">
+			<p>CART (0) </p>
+		</div>
+
+		<div class = "topcart">
+			<a href="cart.html">
+				<img src="res/cart.png" alt="cart">
+			</a>
+		</div>
+		
+	</div>
+
+	<!--Promo picture-->
+	<div class="promo">
+		<a href="shop.html" class="promoButton bghover">SHOP NOW</a>
+
+		<img id = "promopic" src="res/promo_home_2.png" alt="promo">
+
+	</div>
+
+
+	<!--Featured items-->
+
+
+	<!--Featured items Title-->
+	<div class="feature">
+		<img id = "featureT" src="res/feature_title.png" alt="feature title">
+
+
+		<!--Featured items -Item list-->
+		<div id = "figures">
+
+			<div class="blankbox">
+			</div >
+			<a href="item/blackberry.html">
+			<figure class="figure">
+				<img class = "itemimg imghover" src="res/blackberry_m.png" alt="blackberry">
+				<figcaption class = "figcaption">Blackberry</figcaption>
+			</figure>
+			</a>
+
+			<a href="item/walnut.html">
+			<figure class="figure">
+				<img class = "itemimg imghover" src="res/walnut_m.png" alt="Walnut">
+				<figcaption class = "figcaption">Walnut</figcaption>
+			</figure>
+			</a>
+
+			<a href="item/pumpkin.html">
+			<figure class="figure">
+				<img class = "itemimg imghover" src="res/pumpkin_m.png" alt="pumpkin">
+				<figcaption class = "figcaption">Pumpkin Spice</figcaption>
+			</figure>
+			</a>
+
+			<div class="blankbox">	
+			</div>
+
+
+		</div>
+
+		
+	</div>
+
+
+
+
+
+	<!-- An over lay cart on everypage (except cart page)-->
+	<div class="overlayCart">
+		<div class="cartitems">
+			<div class = "cart_T">My Cart</div>
+
+			<div class = "listOfItem">
+
+
+
+			</div>
+			<div class="totals">
+				<hr class="line2">
+				<div class="total">Total:</div>
+				<div id = "priceHolder">
+					
+				</div>
+				<br>
+				<a class = "toCartDetail pinkhover" href="cart.html">DETAIL</a>
+			</div>
+	
+		</div>
+		
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class = "spacing"></div>
+
+
+</body>
+</html>

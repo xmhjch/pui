@@ -1,0 +1,357 @@
+
+/* remove page space*/
+body{
+	margin: 0px;
+	padding: 0px;
+	background-color: #474747;
+}
+
+/*remove link underline*/
+a{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.bghover:hover{
+
+    
+    background-color: #F88490;
+    transition-duration: 0.2s;
+
+
+}
+
+.imghover:hover{
+	filter: brightness(1.1);
+	transition-duration: 0.2s;
+}
+
+.pinkhover:hover{
+	background-color: #F65364;
+    transition-duration: 0.2s;
+}
+
+
+/* top header*/
+
+.header {
+	background-color: #F5515F;
+	display: block;
+
+	width: 100%;
+	height: 77px;
+
+	position: fixed;
+	z-index: 2;
+
+
+
+}
+
+.topButtons {
+	display: inline-block;
+	width: 70%;
+	padding-top: 21px;
+	text-align: center;
+
+}
+
+.topButton {
+	font-family: AvenirNext-Bold;
+	font-size: 14px;
+	color: #FFFFFF;
+	text-align: center;
+
+	height: 27px;
+	width: 140px;
+	background-color: #F5515F;
+    border: 5px solid #FFFFFF;
+
+    padding-top: 8px;
+
+    display: inline-block;
+    vertical-align: middle;
+
+    margin-right:1%;
+    margin-left:1%;
+
+
+
+
+
+}
+
+
+.topimg {
+	float: left;
+	width: 12%;
+	margin-left: 3%;
+	margin-bottom: 13px;
+	margin-top: 13px;
+
+}
+
+.topcart {
+	float: right;
+	
+
+	margin-top: 30px;
+
+
+
+
+
+}
+
+.topcart img{
+	padding-right: 100px;
+	margin-right: -90px;
+
+}
+
+
+
+.cartT{
+	font-family: AvenirNext-Bold;
+	font-size: 14px;
+	color: #FFFFFF;
+	text-align: center;
+
+	float: right;
+	margin-right: 7%;
+
+
+	margin-top: 23px;
+
+
+
+
+
+}
+
+/* shop items */
+
+.cartitems{
+	padding-top: 200px;
+	
+}
+
+.cart_T{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 64px;
+}
+
+.listOfItem{
+
+	width: 60%;
+	display: inline-block;
+	margin-left: 21%;
+	height: 150px;
+
+}
+
+.numAndSelectDiv{
+
+	width: 5%;
+	display: inline-block;
+	vertical-align: top;
+
+}
+
+.itempicDiv{
+
+	width: 15%;
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 5px;
+
+}
+.infoDiv{
+
+	width: 40%;
+	display: inline-block;
+	padding-left: 26px;
+	margin-right: -26px;
+	vertical-align: top;
+	padding-top: 15px;
+
+}
+.priceButtonDiv{
+
+	width: 35%;
+	display: inline-block;
+	text-align: right;
+	vertical-align: top;
+	padding-top: 15px;
+
+
+}
+
+
+.checkbox{
+	font-family: Georgia;
+	font-size: 73px;
+	color: #FFFFFF;
+	text-align: right;
+	text-shadow: 0 2px 32px rgba(0,0,0,0.50);
+
+	
+
+
+
+}
+
+.itempic{
+	outline: 9px solid #FFFFFF;
+	outline-offset: -14px;
+	width: 100%;
+}
+
+.infoName{
+	font-family: AvenirNext-Regular;
+	font-size: 24px;
+	color: #FFFFFF;
+	padding-bottom: 30px;
+}
+
+.infoQuant{
+	font-family: AvenirNext-Regular;
+	font-size: 18px;
+	color: #FFFFFF;
+}
+
+.cartOption{
+	display: inline-block;
+/*	padding:5px;
+	background: #9C9C9C;*/
+}
+
+.infoGlaz{
+	font-family: AvenirNext-Regular;
+	font-size: 18px;
+	color: #FFFFFF;
+}
+
+.itemPrice{
+	font-family: Georgia;
+	font-size: 36px;
+	color: #FFFFFF;
+	text-align: right;
+	text-shadow: 0 2px 32px rgba(0,0,0,0.50);
+	padding-bottom: 10px;
+}
+
+.smallButton{
+	display: inline-block;
+
+
+	margin-top: 11px;
+	font-family: AvenirNext-Bold;
+	font-size: 22.5px;
+	color: #FFFFFF;
+	text-align: center;
+
+	margin-left: 10px;
+
+
+
+	height: 50px;
+	width: 140px;
+	background: #9C9C9C;
+	border: 7px solid #FFFFFF;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+}
+
+.line1{
+	width: 90%;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	border: 0.5px solid #979797;
+}
+
+.line2{
+	width: 60%;
+	border: 1.5px solid #FFFFFF;
+	margin-top: 30px;
+}
+
+.totals{
+	width: 60%;
+	text-align: right;
+	margin-left: 20%;
+}
+
+
+.total{
+	font-family: AvenirNext-Regular;
+	font-size: 24px;
+	color: #FFFFFF;
+	display: inline-block;
+	text-align: right;
+}
+
+.totalPrice{
+	font-family: Georgia;
+	font-size: 64px;
+	color: #FFFFFF;
+	text-align: right;
+	text-shadow: 0 2px 32px rgba(0,0,0,0.50);
+	display: inline-block;
+}
+
+.checkout{
+	display: inline-block;
+
+
+	margin-top: 11px;
+	font-family: AvenirNext-Bold;
+	font-size: 22.5px;
+	color: #FFFFFF;
+	text-align: center;
+
+	margin-left: 10px;
+
+
+
+	height: 77px;
+	width: 257px;
+	background: #9C9C9C;
+	border: 7px solid #FFFFFF;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+}
+
+
+
+
+/* end of page space*/
+.spacing{
+	padding-bottom: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,704 @@
+
+/* remove page space*/
+body{
+	margin: 0px;
+	padding: 0px;
+	background-color: #474747;
+}
+
+/*remove link underline*/
+a{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+button:focus {outline:0;}
+
+.bghover:hover{
+
+    
+    background-color: #F88490;
+    transition-duration: 0.2s;
+
+
+}
+
+.imghover:hover{
+	filter: brightness(1.1);
+	transition-duration: 0.2s;
+}
+
+
+.itemIndex{
+	display: none;
+}
+
+.pinkhover:hover{
+	background-color: #F65364;
+    transition-duration: 0.2s;
+}
+
+
+/* top header*/
+
+
+.header {
+	background-color: #F5515F;
+	display: block;
+
+	width: 100%;
+	height: 77px;
+
+	position: fixed;
+	z-index: 2;
+
+
+
+}
+
+.topButtons {
+	display: inline-block;
+	width: 70%;
+	padding-top: 21px;
+	text-align: center;
+
+}
+
+.topButton {
+	font-family: AvenirNext-Bold;
+	font-size: 14px;
+	color: #FFFFFF;
+	text-align: center;
+
+	height: 27px;
+	width: 140px;
+	background-color: #F5515F;
+    border: 5px solid #FFFFFF;
+
+    padding-top: 8px;
+
+    display: inline-block;
+    vertical-align: middle;
+
+    margin-right:1%;
+    margin-left:1%;
+
+
+
+
+
+}
+
+#tb_shop{
+	background: #D13148;
+}
+
+.topimg {
+	float: left;
+	width: 12%;
+	margin-left: 3%;
+	margin-bottom: 13px;
+	margin-top: 13px;
+
+}
+
+.topcart {
+	float: right;
+	
+
+	margin-top: 30px;
+
+
+
+
+
+}
+
+.topcart img{
+	padding-right: 100px;
+	margin-right: -90px;
+
+}
+
+
+
+.cartT{
+	font-family: AvenirNext-Bold;
+	font-size: 14px;
+	color: #FFFFFF;
+	text-align: center;
+
+	float: right;
+	margin-right: 7%;
+
+
+	margin-top: 23px;
+
+
+
+
+
+}
+
+
+/* shop items */
+
+.shopitems{
+	padding-top: 200px;
+	
+}
+
+#shopT{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+.item{
+	display: inline-block;
+	position: relative;
+    text-align: center;
+}
+
+.items{
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
+.blankbox{
+	width: 20%;
+}
+
+.figcaption{
+	font-family: AvenirNext-Regular;
+	font-size: 21.6px;
+	color: #FFFFFF;
+	text-align: left;
+	margin-left: 13px;
+}
+
+.itemimg{
+	outline: 10px solid #FFFFFF;
+	outline-offset: -26px;
+}
+
+
+/* the price box */
+.pricetag{
+	display: inline;
+	width: 160px;
+	height: 70px;
+
+	position: absolute;
+	bottom: 120px;
+	left: 160px;
+
+	background: #FFFFFF;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+
+}
+
+.itemprice{
+	display: inline;
+	font-family: Georgia;
+	font-size: 53.1px;
+	color: #4A4A4A;
+}
+
+.unit{
+	display: inline;
+	font-family: Georgia-Italic;
+	font-size: 18px;
+	color: #4A4A4A;
+}
+
+
+
+/* add to cart button */
+.tocart {
+
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 11px;
+	font-family: AvenirNext-Bold;
+	font-size: 22.5px;
+	color: #FFFFFF;
+	text-align: center;
+
+
+
+	height: 42px;
+	padding-top: 15px;
+	width: 255px;
+	background: #9C9C9C;
+	border: 7px solid #FFFFFF;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+
+
+}
+
+
+
+/* end of page space*/
+.spacing{
+	padding-bottom: 200px;
+}
+
+
+/*over lay cart*/
+
+.overlayCart{
+	visibility: hidden;
+	position: fixed; 
+    display: block; 
+    text-align: center;
+    width: 300px; 
+    height: 500px; 
+    top: 70px; 
+
+    right: 100px;
+
+    background: #4A4A4A;
+	border: 11px solid #FFFFFF; 
+    z-index: 20; 
+
+
+    box-shadow: 0 20px 40px 0 rgba(0,0,0,0.50);
+
+    overflow-x: scroll;
+}
+
+.cart_T{
+
+	text-align: left;
+	font-family: AvenirNext-Regular;
+	font-size: 36px;
+	color: #FFFFFF;
+	padding: 20px;
+	background-color: #4A4A4A;
+	position: fixed;
+	display: block;
+	width: 260px;
+	box-shadow: 0 2px 10px 0 rgba(0,0,0,0.50);
+	z-index: 10;
+}
+
+
+
+.listOfItem{
+
+
+	display: inline-block;
+	padding-top: 100px;
+	padding-bottom: 150px;
+
+
+
+}
+
+.numAndSelectDiv{
+
+	width: 20px;
+	display: inline-block;
+	text-align: left;
+
+
+}
+
+.itempicDiv{
+
+
+	display: none;
+
+
+}
+.infoDiv{
+
+	width: 160px;
+	text-align: left;
+	display: inline-block;
+
+	vertical-align: top;
+	padding-top: 15px;
+
+}
+.priceButtonDiv{
+
+	width: 90px;
+	display: inline-block;
+	text-align: right;
+	vertical-align: top;
+	padding-top: 15px;
+
+
+}
+
+
+.checkbox{
+	font-family: Georgia;
+	font-size: 20px;
+	color: #FFFFFF;
+	text-align: left;
+	line-height: 27px;
+
+	
+
+
+
+}
+
+
+
+.infoName{
+	font-family: Georgia;
+	font-size: 20px;
+	color: #FFFFFF;
+	text-align: left;
+
+
+	display: inline-block;
+}
+
+.infoQuant{
+	font-family: AvenirNext-Regular;
+	font-size: 12px;
+	color: #FFFFFF;
+	padding-top: 20px;
+}
+
+.infoGlaz{
+	font-family: AvenirNext-Regular;
+	font-size: 12px;
+	color: #FFFFFF;
+}
+
+.itemPrice{
+	font-family: Georgia;
+	font-size: 24px;
+	color: #FFFFFF;
+	text-align: right;
+	text-shadow: 0 2px 32px rgba(0,0,0,0.50);
+	padding-bottom: 10px;
+}
+
+.smallButton{
+	display: inline-block;
+
+
+
+	font-family: AvenirNext-Bold;
+	font-size: 12px;
+	color: #FFFFFF;
+	text-align: center;
+
+	margin-left: 10px;
+
+
+
+	height: 30px;
+	width: 80px;
+	background: #9C9C9C;
+	border: 5px solid #FFFFFF;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+}
+
+.line1{
+	width: 90%;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	border: 0.5px solid #979797;
+}
+
+.line2{
+	width: 80%;
+	border: 1.5px solid #FFFFFF;
+
+
+}
+
+
+
+
+
+.totals{
+	position: fixed;
+	display: block;
+	text-align: right;
+
+    top: 438px; 
+
+    height: 133px;
+
+
+    right: 111px;
+    width: 260px;
+
+    padding-bottom: 10px;
+    padding-top: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+
+    background: #4A4A4A;
+
+}
+
+.total{
+	font-family: AvenirNext-Regular;
+	font-size: 18px;
+	color: #FFFFFF;
+	display: inline-block;
+	text-align: right;
+}
+
+
+.totalPrice{
+	font-family: Georgia;
+	font-size: 32px;
+	color: #FFFFFF;
+	text-align: right;
+	text-shadow: 0 2px 32px rgba(0,0,0,0.50);
+	display: inline-block;
+}
+
+.toCartDetail{
+	display: inline-block;
+
+	font-family: AvenirNext-Bold;
+	font-size: 18px;
+	color: #FFFFFF;
+	text-align: center;
+
+	margin-left: 10px;
+
+
+	padding-top: 3px;
+
+	height: 27px;
+	width: 120px;
+	background: #9C9C9C;
+	border: 5px solid #FFFFFF;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+}
+
+
+
+
+/*hover selection page*/
+
+
+
+.itemChoiceShop{
+	visibility: hidden;
+	position: fixed; 
+    display: block; 
+    text-align: center;
+    width: 600px; 
+
+    height: 450px; 
+    top: 70px; 
+
+    left: 50%;
+    margin-left: -300px;
+
+    background: #4A4A4A;
+	border: 11px solid #FFFFFF; 
+    z-index: 20; 
+
+
+    box-shadow: 0 40px 80px 0 rgba(0,0,0,0.50);
+
+
+
+
+	vertical-align: top;
+	margin-top: 100px;
+}
+
+.textcontainer{
+	width: 100%;
+	padding-top: 50px;
+	height: 80px;
+	display: inline-block;
+
+}
+
+.choicecontainer{
+	padding-top: 10px;
+	text-align: left;
+	padding-left: 60px;
+}
+
+
+
+
+
+.name{
+	display: inline-block;
+	position: absolute;
+	font-family: AvenirNext-Regular;
+	font-size: 30px;
+	color: #FFFFFF;
+
+	max-width: 40%;
+
+
+	left:70px;
+	top:40px;
+
+}
+
+.price{
+	display: inline-block;
+	position: absolute;
+	text-align: left;
+
+	right: 60px;
+	top:30px;
+	font-family: Georgia;
+	font-size: 50px;
+	color: #FFFFFF;
+	margin-right: 10%;
+	
+	
+
+
+}
+
+.dollarUnit{
+	margin-left: auto;
+	position: absolute;
+	right: 245px;
+	top:40px;
+	
+	display: inline-block;
+	font-family: Georgia;
+	font-size: 39.6px;
+	color: #FFFFFF;
+
+
+}
+
+
+
+
+.bodytext{
+	max-width: 80%;
+	font-family: AvenirNext-Regular;
+	font-size: 16.2px;
+	color: #FFFFFF;
+	margin-bottom: 40px;
+}
+
+
+
+.choices{
+	padding-bottom: 20px;
+	margin-left: 60px;
+}
+
+
+.choicename{
+	display: inline-block;
+	font-family: AvenirNext-Bold;
+	font-size: 14px;
+	color: #FFFFFF;
+
+	width: 30px;
+	vertical-align: top;
+	margin-right: 30px;
+
+
+}
+
+.options{
+	display: inline-block;
+	width: 70%;
+	margin-left: 10px;
+
+}
+
+.option{
+	display: inline-flex;
+
+	font-family: AvenirNext-Bold;
+	font-size: 18px;
+	color: #FFFFFF;
+	text-align: center;
+
+	height: 43px;
+	width: auto;
+    border: 4px solid #FFFFFF;
+
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 2%;
+
+
+}
+
+.grey{
+	background-color: #9C9C9C;
+
+}
+
+.pink{
+	background-color: #FE5F77;
+}
+
+
+
+
+/* add to cart button */
+
+.SmalltoCart {
+
+	display: block;
+	margin-left: 170px;
+	margin-top: 11px;
+	font-family: AvenirNext-Bold;
+	font-size: 22.5px;
+	color: #FFFFFF;
+	text-align: center;
+
+	height: 69px;
+	width: 255px;
+	background: #9C9C9C;
+	border: 7px solid #FFFFFF;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="shop.css">
+	<title>Bun Bun Bake Shop</title>
+	<!-- jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- javascript -->
+    <script src="main.js"></script>
+</head>
+<body>
+	<!--The header for all the pages-->
+	<div class = "header" id = "topHeader" >
+		<div class = "topimg">
+			<a href="home.html">
+				<img src="res/title.png" alt="titlebar">
+			</a>
+		</div>
+		
+		<div class = "topButtons">
+			<a href="home.html" class="topButton bghover" id = "tb_home">HOME</a>
+			<a href="shop.html" class="topButton" id = "tb_shop">SHOP</a>
+			<a href="about.html" class="topButton bghover" id = "tb_about">ABOUT</a>
+			<a href="contact.html" class="topButton bghover" id = "tb_contact">CONTACT</a>			
+		</div>
+
+		<div class = "cartT">
+			<p>CART (0) </p>
+		</div>
+
+		<div class = "topcart">
+			<a href="cart.html">
+				<img src="res/cart.png" alt="cart">
+			</a>
+		</div>
+		
+	</div>
+
+
+
+	<!--shop items-->
+
+	<div class="shopitems">
+		<img id = "shopT" src="res/shop_title.png" alt="title">
+
+		<div class = "items">
+
+			<div class="blankbox">
+			</div>
+
+			<!--each specific item-->
+			<div class="item">
+			<a href="item/blackberry.html">
+			<figure>
+				<img class = "itemimg imghover" src="res/blackberry_m.png" alt="blackberry">
+				<div class = "pricetag">
+					<div class = "itemprice">4.18</div>
+					<div class = "unit">/ea</div>
+				</div>
+				<figcaption class = "figcaption">Blackberry</figcaption>
+			</figure>
+			</a>
+			<div class = "tocart pinkhover"><div class = "itemIndex">0</div>ADD TO CART</div>
+			</div>
+
+			<!--each specific item-->
+			<div class="item">
+			<a href="item/walnut.html">
+			<figure>
+				<img class = "itemimg imghover" src="res/walnut_m.png" alt="Walnut">
+				<div class = "pricetag">
+					<div class = "itemprice">3.58</div>
+					<div class = "unit">/ea</div>
+				</div>
+				<figcaption class = "figcaption">Walnut</figcaption>
+			</figure>
+			</a>
+			<div class = "tocart pinkhover"><div class = "itemIndex">1</div>ADD TO CART</div>
+			</div>
+
+			<!--each specific item-->
+			<div class="item">
+			<a href="item/pumpkin.html">
+			<figure>
+				<img class = "itemimg imghover" src="res/pumpkin_m.png" alt="pumpkin">
+				<div class = "pricetag">
+					<div class = "itemprice">2.99</div>
+					<div class = "unit">/ea</div>
+				</div>
+				<figcaption class = "figcaption">Pumpkin Spice</figcaption>
+			</figure>
+			</a>
+			<div class = "tocart pinkhover"><div class = "itemIndex">2</div>ADD TO CART</div>
+			</div>
+
+			<div class="blankbox">	
+			</div>
+
+
+		</div>
+
+		<!--second row of the product-->
+		<div class = "items">
+
+			<div class="blankbox">
+			</div>
+
+			<!--each specific item-->
+			<div class="item">
+			<a href="item/original.html">
+			<figure>
+				<img class = "itemimg imghover" src="res/original_m.png" alt="original">
+				<div class = "pricetag">
+					<div class = "itemprice">2.88</div>
+					<div class = "unit">/ea</div>
+				</div>
+				<figcaption class = "figcaption">Original</figcaption>
+			</figure>
+			</a>
+			<div class = "tocart pinkhover"><div class = "itemIndex">3</div>ADD TO CART</div>
+			</div>
+
+			<!--each specific item-->
+			<div class="item">
+			<a href="item/originalgf.html">
+			<figure>
+				<img class = "itemimg imghover" src="res/originalgf_m.png" alt="originalgf">
+				<div class = "pricetag">
+					<div class = "itemprice">2.98</div>
+					<div class = "unit">/ea</div>
+				</div>
+				<figcaption class = "figcaption">Original (Gluten-free)</figcaption>
+			</figure>
+			</a>
+			<div class = "tocart pinkhover"><div class = "itemIndex">4</div>ADD TO CART</div>
+			</div>
+
+			<!--each specific item-->
+			<div class="item">
+			<a href="item/caremel.html">
+			<figure>
+				<img class = "itemimg imghover" src="res/caramel_m.png" alt="caremel">
+				<div class = "pricetag">
+					<div class = "itemprice">4.28</div>
+					<div class = "unit">/ea</div>
+				</div>
+				<figcaption class = "figcaption">Caramel Pecan</figcaption>
+			</figure>
+			</a>
+			<div class = "tocart pinkhover"><div class = "itemIndex">5</div>ADD TO CART</div>
+			</div>
+
+
+			<div class="blankbox">	
+			</div>
+
+
+		</div>
+
+		
+
+		
+	</div>
+
+	<!-- An over lay cart on everypage (except cart page)-->
+	<div class="overlayCart">
+		<div class="cartitems">
+			<div class = "cart_T">My Cart</div>
+
+			<div class = "listOfItem">
+
+
+
+			</div>
+			<div class="totals">
+				<hr class="line2">
+				<div class="total">Total:</div>
+				<div id = "priceHolder">
+					
+				</div>
+				<br>
+				<a class = "toCartDetail pinkhover" href="cart.html">DETAIL</a>
+			</div>
+	
+		</div>
+		
+	</div>
+
+
+
+	<!-- a hover selection page to add to cart quickly without going inside detail page -->
+	<div class="itemChoiceShop">
+			<div class="textcontainer">
+				<!--item price info -->
+				<div class="title">
+
+					<div class="name">Blackberry</div>
+					<div class="dollarUnit">$</div>
+					<div class="price">4.18</div>
+					
+				</div>
+				
+			</div>
+
+			<!--item options-->
+			<div class="choicecontainer">
+				<div class="choices">
+					<div class="choicename">Number: </div>
+					<div class="options">
+						<button class="option1 option grey pink">1</button>
+						<button class="option1 option grey">3</button>
+						<button class="option1 option grey ">6</button>
+						<button class="option1 option grey">12</button>
+					</div>
+				</div>
+
+				<div class="choices">
+					<div class="choicename">Glazing: </div>
+					<div class="options">
+						<button class="option2 option grey pink">N/A</button>
+						<button class="option2 option grey">Double-chocolate</button>
+						<button class="option2 option grey">Sugar-milk</button>
+						<button class="option2 option grey">Vanilla-milk</button>
+					</div>
+				</div>
+
+				
+			</div>
+
+			<button class="SmalltoCart pinkhover">ADD TO CART</button>
+			
+	</div>
+
+
+
+
+
+
+
+
+	<div class = "spacing"></div>
+
+
+
+
+
+
+
+
+</body>
+</html>

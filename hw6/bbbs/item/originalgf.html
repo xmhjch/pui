@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="item.css">
+	<title>Bun Bun Bake Shop</title>
+	<!-- jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- javascript -->
+    <script src="../main.js"></script>
+</head>
+<body>
+	<div class = "pageIndex">4</div>
+	<!--The header for all the pages-->
+	<div class = "header" id = "topHeader" >
+		<div class = "topimg">
+			<a href="home.html">
+				<img src="../res/title.png" alt="titlebar">
+			</a>
+		</div>
+		
+		<div class = "topButtons">
+			<a href="../home.html" class="topButton bghover" id = "tb_home">HOME</a>
+			<a href="../shop.html" class="topButton" id = "tb_shop">SHOP</a>
+			<a href="../about.html" class="topButton bghover" id = "tb_about">ABOUT</a>
+			<a href="../contact.html" class="topButton bghover" id = "tb_contact">CONTACT</a>			
+		</div>
+
+		<div class = "cartT">
+			<p>CART (0) </p>
+		</div>
+
+		<div class = "topcart">
+			<a href="../cart.html">
+				<img src="../res/cart.png" alt="cart">
+			</a>
+		</div>
+		
+	</div>
+
+	<!--item details-->
+
+	<div class="detail">
+
+		<div class="blankbox"></div>
+
+		<!--item image-->
+		<div class="leftside">
+			<img class="itemimg" src="../res/originalgf_m.png" alt="originalgf">
+		</div>
+
+
+		<div class="rightside">
+			<div class="textcontainer">
+				<!--item price info -->
+				<div class="title">
+
+					<div class="name"> </div>
+					<div class="unit">$</div>
+					<div class="price"> </div>
+					
+				</div>
+
+				<!--item detail description-->
+				<div class="body">
+					<ul class = "bodytext">
+						<li class = "bullet">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+						</li>
+						<li class= "bullet">
+							Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+
+
+			<!--item options-->
+			<div class="choicecontainer">
+				<div class="choices">
+					<div class="choicename">Number: </div>
+					<div class="options">
+						<button class="option1 option grey pink">1</button>
+						<button class="option1 option grey">3</button>
+						<button class="option1 option grey ">6</button>
+						<button class="option1 option grey">12</button>
+					</div>
+				</div>
+
+				<div class="choices">
+					<div class="choicename">Glazing: </div>
+					<div class="options">
+						<button class="option2 option grey pink">N/A</button>
+						<button class="option2 option grey">Double-chocolate</button>
+						<button class="option2 option grey">Sugar-milk</button>
+						<button class="option2 option grey">Vanilla-milk</button>
+					</div>
+				</div>
+
+				
+			</div>
+
+			<button class="toCart pinkhover">ADD TO CART</button>
+			
+		</div>
+
+		<div class="blankbox"></div>
+		
+	</div>
+
+
+	<!--Related items-->
+	<div class="related">
+
+		<div class="relatedT">Related Products</div>
+
+		<!--Featured items -Item list-->
+
+		<div class="controller pinkhover controllerL">&lt;</div>
+
+		<div class = "figuresR">
+
+
+
+
+
+		
+
+		</div>	
+		<div class="controller pinkhover controllerR">&gt;</div>	
+	</div>
+
+	<!-- An over lay cart on everypage (except cart page)-->
+	<div class="overlayCart">
+		<div class="cartitems">
+			<div class = "cart_T">My Cart</div>
+
+			<div class = "listOfItem">
+
+
+
+			</div>
+			<div class="totals">
+				<hr class="line2">
+				<div class="total">Total:</div>
+				<div id = "priceHolder">
+					
+				</div>
+				<br>
+				<a class = "toCartDetail pinkhover" href="../cart.html">DETAIL</a>
+			</div>
+	
+		</div>
+		
+	</div>
+	
+
+
+	<div class = "spacing"></div>
+
+
+</body>
+</html>
