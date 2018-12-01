@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,600,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<title>The Tree of Tech</title>
+	<!-- jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script src="lib/particles.js"></script>
+	<script src="lib/jquery.easing.1.3.js"></script>
+	<script src="lib/jquery.html-svg-connect.js"></script>
+
+
+
+    <!-- javascript -->
+    <script src="script/main.js"></script>
+
+    
+    <script type="text/javascript" src="lib/particles.js"></script>
+</head>
+<body>
+
+	<!-- the first part of the website, with a particle background, title, and typing animation -->
+	<div class="p1">
+		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+		<div id="p1bg"></div>
+		<script type="text/javascript" src="script/psetting.js"></script>
+		<div class="p1text">
+			<div class="p1tt">Technology</div>
+			<div class="typewords"></div>
+		</div>>
+		
+		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+		<script type="text/javascript" src="lib/typewrite.js"></script>
+
+	</div>
+
+<!-- 	the second part of the page. This would include a video, seperated into three screens that each have different speed when scroll pass  -->
+	<div class="p2">
+		<div class="videos">
+			<div class = "vholder rellax" id="v1" data-rellax-speed="2">
+				<video  muted loop preload="auto" class="bgVideo "   poster="res/img/civ-bg.jpg">
+		  			<source src="res/civ_bg1.mp4" type="video/mp4">
+				</video>
+			</div>
+			<div class = "vholder rellax"  id="v2" data-rellax-speed="-5">
+				<video muted loop preload="auto" class="bgVideo"   poster="res/img/civ-bg.jpg">
+		  			<source src="res/civ_bg1.mp4" type="video/mp4">
+				</video>
+			</div>
+			<div class = "vholder rellax"  id="v3" data-rellax-speed="5">
+				<video muted loop preload="auto" class="bgVideo"   poster="res/img/civ-bg.jpg">
+		  			<source src="res/civ_bg1.mp4" type="video/mp4">
+				</video>
+			</div>
+			
+
+		</div>
+
+		<!-- Overlaying the video will be a quote -->
+		<div class="quotes rellax" data-rellax-speed="3">
+			<p class="quote quote1"> The brain is like a muscle. </p>
+			<p class="quote quote2"> When it is in use we feel very good. </p>
+			<p class="quote quote3"> Understanding is joyous. </p>
+			<p class="quote quote4"> - Carl Sagan - </p>
+			
+		</div>
+		
+	</div>
+
+
+<!-- 	the third part of the page. This would include the main intro information of the page, which will lead to the tree -->
+	<div class="p3">
+		<div class="intro">
+			<p class="introp ip1">Technology is one of the driving forces behind civilization. 
+				Advancing technology makes a civilization stronger, bigger, smarter and a much tougher opponent.
+				
+			</p>
+			
+			<p class="introp ip2" id="pp3">The Tree of Technology displays a number of significant technologies and shows how they are intertwined. 
+				You can scroll to expand the tree and click on a tech to see more information about that particular tech.
+				
+			</p>
+
+
+		</div>
+		
+<!-- 		svgcontainers that contains the lines generated between elements -->
+		<div id = "svgContainer2"></div>
+			<div id = "svgContainer" ></div>
+
+		
+		
+		<!-- the fourth part of the page. this is the main part of the whole page since it includes icons, lines and most information -->
+	</div>
+	<div class="p5">
+		
+		
+
+		<script src="script/tree.js"></script>
+		<script src="script/text.js"></script>
+		<img class = "bgDown" id="p3down" src="res/img/down.png">
+		<div class="eras">
+			
+		</div>
+<!-- 		the background text which indicates the era of technologies -->
+		<div class="techs">
+			<div class="r1 era rellax" data-rellax-speed="-2">ACIENT ERA</div>
+			<div class="r5 era rellax" data-rellax-speed="-2">CLASSICAL ERA</div>
+			<div class="r10 era rellax" data-rellax-speed="-2">MEDIEVAL ERA</div>
+			<div class="r15 era rellax" data-rellax-speed="-2">RENAISSANCE ERA</div>
+			<div class="r19 era rellax" data-rellax-speed="-2">INDUSTRIAL ERA</div>
+			<div class="r25 era rellax" data-rellax-speed="-2">MODERN ERA</div>
+			<div class="r29 era rellax" data-rellax-speed="-2">ATOMIC ERA</div>
+			<div class="r33 era rellax" data-rellax-speed="-2">INFORMATION ERA</div>
+
+			<!-- each tech has its own id, icon and text -->
+			<div id = "MINING" class = "tech c1 r1">
+				<img class="techimg" src="res/img/tech/TECH_MINING.png">
+				<div class="techcaption">MINING</div>
+
+			</div>
+			<div id = "POTTERY" class = "tech c4 r2">
+				<img class="techimg" src="res/img/tech/TECH_POTTERY.png">
+				<div class="techcaption">POTTERY</div>
+			</div>
+			<div id = "MASONRY" class = "tech c1 r3">
+				<img class="techimg" src="res/img/tech/TECH_MASONRY.png">
+				<div class="techcaption">MASONRY</div>
+			</div>
+			<div id = "ARCHERY" class = "tech c2 r3">
+				<img class="techimg" src="res/img/tech/TECH_ARCHERY.png">
+				<div class="techcaption">ARCHERY</div>
+			</div>
+			<div id = "ANIMAL_HUSBANDRY" class = "tech c3 r3">
+				<img class="techimg" src="res/img/tech/TECH_ANIMAL_HUSBANDRY.png">
+				<div class="techcaption">ANIMAL HUSBANDRY</div>
+			</div>
+			<div id = "AGRICULTURE" class = "tech c4 r3">
+				<img class="techimg" src="res/img/tech/TECH_AGRICULTURE.png">
+				<div class="techcaption">AGRICULTURE</div>
+			</div>
+			<div id = "TRAPPING" class = "tech c22 r4">
+				<img class="techimg" src="res/img/tech/TECH_TRAPPING.png">
+				<div class="techcaption">TRAPPING</div>
+			</div>
+			<div id = "SAILING" class = "tech c33 r4">
+				<img class="techimg" src="res/img/tech/TECH_SAILING.png">
+				<div class="techcaption">SAILING</div>
+			</div>
+			<div id = "THE_WHEEL" class = "tech c2 r5">
+				<img class="techimg" src="res/img/tech/TECH_THE_WHEEL.png">
+				<div class="techcaption">THE WHEEL</div>
+			</div>
+			<div id = "HORSEBACK_RIDING" class = "tech c22 r6">
+				<img class="techimg" src="res/img/tech/TECH_HORSEBACK_RIDING.png">
+				<div class="techcaption">HORSEBACK RIDING</div>
+			</div>
+			<div id = "BRONZE_WORKING" class = "tech c1 r6">
+				<img class="techimg" src="res/img/tech/TECH_BRONZE_WORKING.png">
+				<div class="techcaption">BRONZE WORKING</div>
+			</div>
+			<div id = "WRITING" class = "tech c33 r6">
+				<img class="techimg" src="res/img/tech/TECH_WRITING.png">
+				<div class="techcaption">WRITING</div>
+			</div>
+			<div id = "CALENDAR" class = "tech c3 r7">
+				<img class="techimg" src="res/img/tech/TECH_CALENDAR.png">
+				<div class="techcaption">CALENDAR</div>
+			</div>
+			<div id = "MATHEMATICS" class = "tech c33 r8">
+				<img class="techimg" src="res/img/tech/TECH_MATHEMATICS.png">
+				<div class="techcaption">MATHEMATICS</div>
+			</div>
+			<div id = "IRON_WORKING" class = "tech c1 r9">
+				<img class="techimg" src="res/img/tech/TECH_IRON_WORKING.png">
+				<div class="techcaption">IRON WORKING</div>
+			</div>
+			<div id = "ENGINEERING" class = "tech c2 r9">
+				<img class="techimg" src="res/img/tech/TECH_ENGINEERING.png">
+				<div class="techcaption">ENGINEERING</div>
+			</div>
+			<div id = "OPTICS" class = "tech c4 r10">
+				<img class="techimg" src="res/img/tech/TECH_OPTICS.png">
+				<div class="techcaption">OPTICS</div>
+			</div>
+			<div id = "METAL_CASTING" class = "tech c1 r10">
+				<img class="techimg" src="res/img/tech/TECH_METAL_CASTING.png">
+				<div class="techcaption">METAL CASTING</div>
+			</div>
+			<div id = "THEOLOGY" class = "tech c3 r11">
+				<img class="techimg" src="res/img/tech/TECH_THEOLOGY.png">
+				<div class="techcaption">THEOLOGY</div>
+			</div>
+			<div id = "CURRENCY" class = "tech c11 r12">
+				<img class="techimg" src="res/img/tech/TECH_CURRENCY.png">
+				<div class="techcaption">CURRENCY</div>
+			</div>
+			<div id = "DRAMA" class = "tech c22 r12">
+				<img class="techimg" src="res/img/tech/TECH_DRAMA.png">
+				<div class="techcaption">DRAMA AND POETRY</div>
+			</div>
+			<div id = "PHILOSOPHY" class = "tech c33 r12">
+				<img class="techimg" src="res/img/tech/TECH_PHILOSOPHY.png">
+				<div class="techcaption">PHILOSOPHY</div>
+			</div>
+			<div id = "GUILDS" class = "tech c11 r13">
+				<img class="techimg" src="res/img/tech/TECH_GUILDS.png">
+				<div class="techcaption">GUILDS</div>
+			</div>
+			<div id = "CIVIL_SERVICE" class = "tech c22 r14">
+				<img class="techimg" src="res/img/tech/TECH_CIVIL_SERVICE.png">
+				<div class="techcaption">CIVIL SERVICE</div>
+			</div>
+			<div id = "CONSTRUCTION" class = "tech c2 r15">
+				<img class="techimg" src="res/img/tech/TECH_CONSTRUCTION.png">
+				<div class="techcaption">CONSTRUCTION</div>
+			</div>
+			<div id = "STEEL" class = "tech c1 r15">
+				<img class="techimg" src="res/img/tech/TECH_STEEL.png">
+				<div class="techcaption">STEEL</div>
+			</div>
+
+
+			<div id = "PHYSICS" class = "tech c11 r16">
+				<img class="techimg" src="res/img/tech/TECH_PHYSICS.png">
+				<div class="techcaption">PHYSICS</div>
+			</div>
+			<div id = "MACHINERY" class = "tech c22 r16">
+				<img class="techimg" src="res/img/tech/TECH_MACHINERY.png">
+				<div class="techcaption">MACHINERY</div>
+			</div>
+			<div id = "GUNPOWDER" class = "tech c1 r17">
+				<img class="techimg" src="res/img/tech/TECH_GUNPOWDER.png">
+				<div class="techcaption">GUNPOWDER</div>
+			</div>
+			<div id = "EDUCATION" class = "tech c33 r18">
+				<img class="techimg" src="res/img/tech/TECH_EDUCATION.png">
+				<div class="techcaption">EDUCATION</div>
+			</div>
+			<div id = "COMPASS" class = "tech c4 r19">
+				<img class="techimg" src="res/img/tech/TECH_COMPASS.png">
+				<div class="techcaption">COMPASS</div>
+			</div>
+			<div id = "CHIVALRY" class = "tech c2 r19">
+				<img class="techimg" src="res/img/tech/TECH_CHIVALRY.png">
+				<div class="techcaption">CHIVALRY</div>
+			</div>
+			<div id = "ECONOMICS" class = "tech c22 r20">
+				<img class="techimg" src="res/img/tech/TECH_ECONOMICS.png">
+				<div class="techcaption">ECONOMICS</div>
+			</div>
+			<div id = "BANKING" class = "tech c22 r21">
+				<img class="techimg" src="res/img/tech/TECH_BANKING.png">
+				<div class="techcaption">BANKING</div>
+			</div>
+			<div id = "PRINTING_PRESS" class = "tech c11 r21">
+				<img class="techimg" src="res/img/tech/TECH_PRINTING_PRESS.png">
+				<div class="techcaption">PRINTING PRESS</div>
+			</div>
+			<div id = "ARCHITECTURE" class = "tech c3 r22">
+				<img class="techimg" src="res/img/tech/TECH_ARCHITECTURE.png">
+				<div class="techcaption">ARCHITECTURE</div>
+			</div>
+			<div id = "NAVIGATION" class = "tech c4 r22">
+				<img class="techimg" src="res/img/tech/TECH_NAVIGATION.png">
+				<div class="techcaption">NAVIGATION</div>
+			</div>
+			<div id = "METALLURGY" class = "tech c2 r23">
+				<img class="techimg" src="res/img/tech/TECH_METALLURGY.png">
+				<div class="techcaption">METALLURGY</div>
+			</div>
+			<div id = "ASTRONOMY" class = "tech c4 r24">
+				<img class="techimg" src="res/img/tech/TECH_ASTRONOMY.png">
+				<div class="techcaption">ASTRONOMY</div>
+			</div>
+			<div id = "ACOUSTICS" class = "tech c3 r24">
+				<img class="techimg" src="res/img/tech/TECH_ACOUSTICS.png">
+				<div class="techcaption">ACOUSTICS</div>
+			</div>
+			<div id = "SCIENTIFIC_THEORY" class = "tech c33 r25">
+				<img class="techimg" src="res/img/tech/TECH_SCIENTIFIC_THEORY.png">
+				<div class="techcaption">SCIENTIFIC THEORY</div>
+			</div>
+			<div id = "STEAM_POWER" class = "tech c22 r26">
+				<img class="techimg" src="res/img/tech/TECH_STEAM_POWER.png">
+				<div class="techcaption">STEAM POWER</div>
+			</div>
+			<div id = "INDUSTRIALIZATION" class = "tech c22 r27">
+				<img class="techimg" src="res/img/tech/TECH_INDUSTRIALIZATION.png">
+				<div class="techcaption">INDUSTRIALIZATION</div>
+			</div>
+			<div id = "MILITARY_SCIENCE" class = "tech c11 r27">
+				<img class="techimg" src="res/img/tech/TECH_MILITARY_SCIENCE.png">
+				<div class="techcaption">MILITARY SCIENCE</div>
+			</div>
+			<div id = "CHEMISTRY" class = "tech c1 r28">
+				<img class="techimg" src="res/img/tech/TECH_CHEMISTRY.png">
+				<div class="techcaption">CHEMISTRY</div>
+			</div>
+			<div id = "ARCHAEOLOGY" class = "tech c4 r28">
+				<img class="techimg" src="res/img/tech/TECH_ARCHAEOLOGY.png">
+				<div class="techcaption">ARCHAEOLOGY</div>
+			</div>
+			<div id = "RAILROAD" class = "tech c11 r29">
+				<img class="techimg" src="res/img/tech/TECH_RAILROAD.png">
+				<div class="techcaption">RAILROAD</div>
+			</div>
+			<div id = "ELECTRICITY" class = "tech c22 r29">
+				<img class="techimg" src="res/img/tech/TECH_ELECTRICITY.png">
+				<div class="techcaption">ELECTRICITY</div>
+			</div>
+			<div id = "REPLACEABLE_PARTS" class = "tech c33 r29">
+				<img class="techimg" src="res/img/tech/TECH_REPLACEABLE_PARTS.png">
+				<div class="techcaption">REPLACEABLE PARTS</div>
+			</div>
+			<div id = "FERTILIZER" class = "tech c1 r30">
+				<img class="techimg" src="res/img/tech/TECH_FERTILIZER.png">
+				<div class="techcaption">FERTILIZER</div>
+			</div>
+			<div id = "RIFLING" class = "tech c2 r31">
+				<img class="techimg" src="res/img/tech/TECH_RIFLING.png">
+				<div class="techcaption">RIFLING</div>
+			</div>
+			<div id = "PLASTIC" class = "tech c3 r31">
+				<img class="techimg" src="res/img/tech/TECH_PLASTIC.png">
+				<div class="techcaption">PLASTIC</div>
+			</div>
+			<div id = "BIOLOGY" class = "tech c4 r31">
+				<img class="techimg" src="res/img/tech/TECH_BIOLOGY.png">
+				<div class="techcaption">BIOLOGY</div>
+			</div>
+			<div id = "REFRIGERATION" class = "tech c33 r32">
+				<img class="techimg" src="res/img/tech/TECH_REFRIGERATION.png">
+				<div class="techcaption">REFRIGERATION</div>
+			</div>
+			<div id = "ECOLOGY" class = "tech c4 r33">
+				<img class="techimg" src="res/img/tech/TECH_ECOLOGY.png">
+				<div class="techcaption">ECOLOGY</div>
+			</div>
+			<div id = "DYNAMITE" class = "tech c1 r33">
+				<img class="techimg" src="res/img/tech/TECH_DYNAMITE.png">
+				<div class="techcaption">DYNAMITE</div>
+			</div>
+			<div id = "COMBUSTION" class = "tech c2 r34">
+				<img class="techimg" src="res/img/tech/TECH_COMBUSTION.png">
+				<div class="techcaption">COMBUSTION</div>
+			</div>
+			<div id = "RADIO" class = "tech c3 r34">
+				<img class="techimg" src="res/img/tech/TECH_RADIO.png">
+				<div class="techcaption">RADIO</div>
+			</div>
+
+
+			<div id = "FLIGHT" class = "tech c22 r35">
+				<img class="techimg" src="res/img/tech/TECH_FLIGHT.png">
+				<div class="techcaption">FLIGHT</div>
+			</div>
+			<div id = "COMBINED_ARMS" class = "tech c1 r36">
+				<img class="techimg" src="res/img/tech/TECH_COMBINED_ARMS.png">
+				<div class="techcaption">COMBINED ARMS</div>
+			</div>
+			<div id = "BALLISTICS" class = "tech c2 r36">
+				<img class="techimg" src="res/img/tech/TECH_BALLISTICS.png">
+				<div class="techcaption">BALLISTICS</div>
+			</div>
+			<div id = "ROCKETRY" class = "tech c22 r37">
+				<img class="techimg" src="res/img/tech/TECH_ROCKETRY.png">
+				<div class="techcaption">ROCKETRY</div>
+			</div>
+			<div id = "ATOMIC_THEORY" class = "tech c33 r37">
+				<img class="techimg" src="res/img/tech/TECH_ATOMIC_THEORY.png">
+				<div class="techcaption">ATOMIC THEORY</div>
+			</div>
+			<div id = "ELECTRONICS" class = "tech c3 r38">
+				<img class="techimg" src="res/img/tech/TECH_ELECTRONICS.png">
+				<div class="techcaption">ELECTRONICS</div>
+			</div>
+			<div id = "PENICILIN" class = "tech c4 r38">
+				<img class="techimg" src="res/img/tech/TECH_PENICILIN.png">
+				<div class="techcaption">PENICILIN</div>
+			</div>
+			<div id = "RADAR" class = "tech c2 r39">
+				<img class="techimg" src="res/img/tech/TECH_RADAR.png">
+				<div class="techcaption">RADAR</div>
+			</div>
+			<div id = "COMPUTERS" class = "tech c11 r40">
+				<img class="techimg" src="res/img/tech/TECH_COMPUTERS.png">
+				<div class="techcaption">COMPUTERS</div>
+			</div>
+			<div id = "NUCLEAR_FISSION" class = "tech c33 r40">
+				<img class="techimg" src="res/img/tech/TECH_NUCLEAR_FISSION.png">
+				<div class="techcaption">NUCLEAR FISSION</div>
+			</div>
+			<div id = "STEALTH" class = "tech c1 r41">
+				<img class="techimg" src="res/img/tech/TECH_STEALTH.png">
+				<div class="techcaption">STEALTH</div>
+			</div>
+			<div id = "SATELLITES" class = "tech c2 r41">
+				<img class="techimg" src="res/img/tech/TECH_SATELLITES.png">
+				<div class="techcaption">SATELLITES</div>
+			</div>
+			<div id = "ADVANCED_BALLISTICS" class = "tech c3 r41">
+				<img class="techimg" src="res/img/tech/TECH_ADVANCED_BALLISTICS.png">
+				<div class="techcaption">ADVANCED BALLISTICS</div>
+			</div>
+			<div id = "TELECOM" class = "tech c4 r41">
+				<img class="techimg" src="res/img/tech/TECH_TELECOM.png">
+				<div class="techcaption">TELECOM</div>
+			</div>
+			<div id = "LASERS" class = "tech c11 r42">
+				<img class="techimg" src="res/img/tech/TECH_LASERS.png">
+				<div class="techcaption">LASERS</div>
+			</div>
+			<div id = "ROBOTICS" class = "tech c22 r42">
+				<img class="techimg" src="res/img/tech/TECH_ROBOTICS.png">
+				<div class="techcaption">ROBOTICS</div>
+			</div>
+			<div id = "MOBILE_TACTICS" class = "tech c33 r42">
+				<img class="techimg" src="res/img/tech/TECH_MOBILE_TACTICS.png">
+				<div class="techcaption">MOBILE TACTICS</div>
+			</div>
+			<div id = "PARTICLE_PHYSICS" class = "tech c3 r43">
+				<img class="techimg" src="res/img/tech/TECH_PARTICLE_PHYSICS.png">
+				<div class="techcaption">PARTICLE PHYSICS</div>
+			</div>
+			<div id = "NANOTECHNOLOGY" class = "tech c11 r44">
+				<img class="techimg" src="res/img/tech/TECH_NANOTECHNOLOGY.png">
+				<div class="techcaption">NANO TECHNOLOGY</div>
+			</div>
+			<div id = "GLOBALIZATION" class = "tech c33 r44">
+				<img class="techimg" src="res/img/tech/TECH_GLOBALIZATION.png">
+				<div class="techcaption">GLOBALIZATION</div>
+			</div>
+			<div id = "NUCLEAR_FUSION" class = "tech c2 r45">
+				<img class="techimg" src="res/img/tech/TECH_NUCLEAR_FUSION.png">
+				<div class="techcaption">NUCLEAR FUSION</div>
+			</div>
+			<div id = "THE_INTERNET" class = "tech c3 r45">
+				<img class="techimg" src="res/img/tech/TECH_INTERNET.png">
+				<div class="techcaption">THE INTERNET</div>
+			</div>
+			<div id = "FUTURE_TECH" class = "tech c22 r46">
+				<img class="techimg" src="res/img/tech/TECH_FUTURE_TECH.png">
+				<div class="techcaption">FUTURE TECH</div>
+			</div>
+
+
+
+			
+
+
+		</div>
+		<!-- an image serves for the gradient effect at bottom of page -->
+		<img class = "coverb1" src="res/img/bg-gradient.png">
+
+		<!-- time line on the right  -->
+		<div class="timeline">
+			<img class = "tll" src="res/img/line11.png">
+			<img class = "tlscale" src="res/img/scale1.png">
+			<img class = "tlMove" src="res/img/arrow.png">
+		</div>
+
+		<!-- detail page that will be filled up when one tech is clicked -->
+		<div class="techDetail">
+			<img class="techimgD">
+			<img class="xD" src="res/img/x.png">
+			<div class="textD">
+				<div class="titleD"></div>
+				<div class="timeD"></div>
+				<div class="quoteD"></div>
+				<div class="detailD"></div>
+			</div>
+				
+		</div>
+		
+
+		
+	</div>
+
+
+
+	
+	<div>
+		
+	</div>
+	<script type="text/javascript" src="lib/rellax.min.js"></script>
+	<script>
+	  var rellax = new Rellax('.rellax');
+	</script>
+
+
+
+	
+
+
+
+</body>
+</html>

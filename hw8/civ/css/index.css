@@ -1,0 +1,1366 @@
+
+
+/* remove page space*/
+body{
+	margin: 0px;
+	padding: 0px;
+	background-color: #232323;;
+}
+
+/*remove link underline*/
+a{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+/*class that assists with scrolling of whole page*/
+body.stopScroll{
+	overflow: hidden;
+}
+
+body.showScroll{
+	overflow: visible;
+}
+
+/*
+hide scrollbar on the right for better viewing effect*/
+body::-webkit-scrollbar{
+	display: none;
+}
+
+
+
+/*first part of page*/
+.p1{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top:0%;
+	left:0%;
+	background-color: #17182f;
+}
+
+/*page ground of p1*/
+#p1bg{
+	position: fixed;
+	width: 2000px;
+	height:2000px;
+	overflow-y: hidden;
+	top: 0%;
+	left:0%;
+}
+
+
+/*all text on p1*/
+.p1text{
+	width: 100%;
+	position: absolute;
+	left:40px;
+	top: 60%;
+
+	transform: perspective(1px) translateZ(0);
+  	transition-duration: 1s;
+  	transition-property: transform, opacity;
+  	transition-timing-function: ease-out;
+
+  	transform: translateY(8px);
+  	opacity: 0;
+}
+
+
+/*title of the page*/
+.p1tt{
+
+	font-family: Raleway;
+	font-weight: 300;
+	color: #FFFFFF;
+	text-align: left;
+	text-shadow: 0 2px 4px rgba(0,0,0,0.50);
+	
+	font-size: 90px;
+
+
+  	
+
+}
+
+/*animation effect of text on p1*/
+.p1t_ani{
+	transform: translateY(0px);
+	opacity: 1;
+}
+
+
+/*typing animation origin words*/
+.typewords{
+	display: inline;
+	width: 100%;
+	font-family: Raleway;
+	font-weight: 300;
+	color: #FFFFFF;
+	text-align: left;
+	text-shadow: 0 2px 4px rgba(0,0,0,0.50);
+	top: calc(60% + 120px);
+	font-size: 30px;
+	
+}
+
+/*the flashing cursor*/
+.typed-cursor{
+	font-family: Raleway;
+	font-weight: 300;
+	color: #FFFFFF;
+	text-align: center;
+	text-shadow: 0 2px 4px rgba(0,0,0,0.50);
+	font-size: 30px;
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+
+
+
+/*the second part of the page*/
+.p2{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+	top: 100%;
+	overflow: hidden;
+	background: black;
+
+}
+
+/*background video*/
+.bgVideo {
+
+	min-width: 100%;
+	min-height: 100%;
+  position: absolute;
+
+
+  filter: brightness(80%);
+
+}
+
+/*the wrapper around video*/
+
+.vholder{
+	position: absolute;
+	left: 0%;
+	top:0%;
+	width: 100%;
+	height: 100%;
+}
+
+/*three wrappers in total*/
+
+#v1{
+	top:10%;
+	clip: rect(200px,800px,800px,200px);
+	box-shadow: 2px 7px 8px rgba(0,0,0,0.50);
+	overflow:hidden
+
+}
+#v2{
+	left: -10%;
+	clip: rect(10px,200px,200px,100px);
+	box-shadow: 2px 7px 8px rgba(0,0,0,0.50);
+	overflow:hidden
+
+}
+#v3{
+	left: 10%;
+	clip: rect(100px,100px,300px,0px);
+	box-shadow: 2px 7px 8px rgba(0,0,0,0.50);
+	overflow:hidden
+
+}
+
+
+
+
+
+
+.bgline.bglineAnimate{
+	animation: bgAni 0.5s;
+}
+
+.bgline.bglineDash {
+
+	stroke-dashoffset: 60%;
+	stroke-dasharray: 20%, 2%, 6%, 2%;
+	
+	animation: bgAni 1s infinite;
+}
+
+
+
+@keyframes bgAni {
+	0%{
+		stroke-width:1.5%;
+		opacity: 0.5;
+		animation-timing-function: ease-out;
+	}
+	20%{
+		stroke-width:2.4%;
+		opacity: 0.8;
+		animation-timing-function: ease-in;
+	}
+	40%{
+		stroke-width:2.6%;
+		opacity: 0.9;
+		animation-timing-function: ease-in;
+	}
+	60%{
+		stroke-width:1.5%;
+		opacity: 0.9;
+		animation-timing-function: ease-in;
+	}
+	80%{
+		stroke-width:1%;
+		opacity: 0.8;
+		animation-timing-function: ease-in;
+	}
+	100%{
+		stroke-width:1.5%;
+		opacity: 0.5;
+		animation-timing-function: ease-in;
+	}
+
+}
+
+
+/*quotes that overlays video*/
+
+.quotes{
+	position: absolute;
+	
+	width: 100%;
+	height:30%;
+	top:80%;
+	margin-top: -15%;
+
+
+}
+
+
+.quote{
+	display:inline-block;
+	font-family: Raleway;
+	font-weight: 400;
+	color: #FFFFFF;
+	font-size: 40px;
+	text-align: center;
+	width: 100%;
+	line-height: 0px;
+
+
+    opacity: 1;
+
+
+  
+}
+
+/*third part of the page*/
+
+
+.p3{
+	width: 100%;
+	height:50%;
+	background: #232323;
+	position: absolute;
+	top:200%;
+
+
+}
+
+
+/*
+the large intro div*/
+.intro{
+	width: 700px;
+	margin-left: -350px;
+	height: 300px;
+	margin-top: -150px;
+	position: absolute;
+	vertical-align: center;
+	left:50%;
+	top:60%;
+
+}
+
+/*the text inside intro div*/
+.introp{
+	display:inline-block;
+	font-family: Raleway;
+	font-weight: 300;
+	color: #FFFFFF;
+	letter-spacing: 0px;
+	font-size: 30px;
+	text-align: center;
+	transition: opacity 1s linear;
+}
+
+.ip1{
+	opacity: 0;
+}
+
+.ip2{
+	opacity: 0;
+}
+
+/*animation for intro text*/
+.iplight{
+	opacity: 1;
+}
+
+
+/*the fourth part of page*/
+.p5{
+	width: 100%;
+	top:250%;
+	position: absolute;
+
+	height: calc(130vh + calc(45*325px));
+
+	transition: background 0.3s linear 0s;
+}
+
+/*the ovelay effect of bg*/
+.p5.dark{
+	background: #161616;
+}
+#p3down{
+	opacity: 0.0;
+	top:0%;
+}
+
+
+/*the detail popup*/
+.techDetail{
+	background-image: linear-gradient(-180deg, #232323 36%, #303030 98%);
+	box-shadow: 0 2px 78px 14px rgba(0,0,0,0.50);
+	border-radius: 19px;
+	position: fixed;
+	width: 900px;
+
+	height: 730px;
+	margin-left: -450px;
+	margin-top: -365px;
+	left: 50%;
+
+	top:50%;
+	visibility: hidden;
+	opacity: 0;
+
+
+}
+
+/*text detail within the popup*/
+
+.textD{
+	position: absolute;
+	left:256px;
+	top:40px;
+	margin-right: 40px;
+}
+
+.xD{
+	position: absolute;
+	right: 20px;
+	top:20px;
+	max-width: 33px;
+}
+
+.titleD{
+	display:block;
+	font-family: Raleway;
+	font-weight: 300;
+	color: #FFFFFF;
+	letter-spacing: 10px;
+	font-size: 42px;
+	margin-bottom: 20px;
+
+}
+.timeD{
+	display:block;
+	font-family: Raleway;
+	font-weight: 400;
+	color: #FFFFFF;
+	letter-spacing: 5px;
+	font-size: 22px;
+	margin-bottom: 40px;
+}
+
+.quoteD{
+	display:block;
+	font-family: Raleway;
+	font-weight: 300;
+	font-style: italic;
+	color: #FFFFFF;
+	font-size: 22px;
+	margin-bottom: 40px;
+}
+.detailD{
+	display:block;
+	font-family: Raleway;
+	font-weight: 300;
+	color: #FFFFFF;
+	font-size: 16px;
+	line-height: 22px;
+
+}
+
+
+/*the image for gradient effect*/
+
+.coverb1{
+	position: fixed;
+	width: 100%;
+	height: 50%;
+	top: 50%;
+	pointer-events: none;
+
+}
+
+
+
+/*timeline on the right*/
+.timeline{
+	position: fixed;
+	right: 0%;
+	top: 0%;
+	height: 100%;
+	opacity: 0;
+	transition: opacity 1s linear;
+}
+
+.timeline.light{
+	opacity: 1;
+}
+
+.tll{
+	position: absolute;
+	right: 0%;
+	top: 0%;
+	width: 10px;
+	height: 100%;
+}
+.tlMove{
+	position: absolute;
+	right: 0%;
+	top: 0px;
+	width: 100px;
+
+}
+
+.tlscale{
+	position: absolute;
+	right: 10px;
+	top: 0px;
+	width: 80px;
+}
+
+
+/*the underlying era text*/
+
+.era{
+	position: absolute;
+	font-family: Raleway;
+	font-weight: 700;
+	color: #FFFFFF;
+	opacity: 0.2;
+	font-size: 90px;
+	filter: blur(2px);
+	transition: transform 1s linear;
+
+}
+
+
+
+
+
+
+
+/*the containers for all tech*/
+.techs{
+	top:300px;
+	width: 920px;
+	margin-left: -460px;
+	left: 50%;
+	position: absolute;
+	height: 100%;
+	transition: filter 0.2s linear 0.1s;
+
+	
+}
+/*
+when tech is blocked*/
+.techs.dark{
+	filter:brightness(95%) blur(3px);
+}
+
+
+/*class for each tech*/
+.tech{
+	width: 200px;
+	height: 240px;
+	position: absolute;
+	filter:grayscale(100%) brightness(70%) contrast(30%);
+	
+
+	transition: filter 1s linear 0s;
+
+}
+
+
+
+
+
+
+
+/*when tech has not show up*/
+.tech.grey{
+
+	filter:grayscale(100%) brightness(100%) contrast(65%);
+}
+
+/*when tech enter center of screen*/
+.tech.light{
+
+	filter:grayscale(0%) brightness(100%) contrast(100%);
+
+}
+
+/*icon animation*/
+.techimg.light{
+	animation: imglight 1.5s;
+	filter:brightness(100%) ;
+	transform: scale(1,1);
+
+}
+
+.techimg.light:hover{
+	transform: scale(1.2);
+}
+
+@keyframes imglight{
+	0%{
+		filter:brightness(100%) ;
+		transform: scale(0.8, 0.8);
+	}
+	35%{
+		filter:brightness(150%) ;
+		transform: scale(1.15, 1.15);
+
+	}
+	100%{
+		filter:brightness(100%) ;
+		transform: scale(1, 1);
+	}
+}
+
+
+
+.techimg{
+	width: 100%;
+	margin-left: -50%;
+	margin-top: 0%;
+	transform: scale(0.8, 0.8) perspective(1px) translateZ(0);
+	position: absolute;
+	left: 50%;
+	top:0%;
+	filter:brightness(100%) drop-shadow(0 0 0px rgba(0,0,0,0.50));
+	transition: transform 0.5s cubic-bezier(0.47, 2.02, 0.31, -0.36);
+
+	/*transition: width 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275), margin-left 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);*/
+
+}
+
+
+
+
+/*caption effect*/
+.techcaption{
+	display:inline-block;
+	font-family: Raleway;
+	font-weight: 300;
+	color: #FFFFFF;
+	letter-spacing: 5px;
+	font-size: 20px;
+	text-align: center;
+	position: absolute;
+	width: 100%;
+	margin-left: -50%;
+	left: 50%;
+	top:190px;
+	transition: opacity 0.5s linear 1s;
+	opacity: 0;
+
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background: #232323;
+
+}
+
+
+
+
+.techcaption.light{
+	opacity: 1;
+}
+
+
+/*settings for the lines*/
+
+#svgContainer2 {
+      
+    position: absolute;
+    opacity: 0.0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 1s linear;
+}
+
+#svgContainer {
+      
+    position: absolute;
+    opacity: 0.0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 1s linear;
+
+}
+
+
+
+.treeline2{
+	stroke: #000000;
+  	stroke-width: 8;
+}
+
+
+
+.treeline1{
+	stroke: #DDD5B2;
+  	stroke-width: 6;
+  	stroke-dasharray: 0;
+  	stroke-dashoffset: 0;
+  	transition: stroke-dashoffset 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+
+
+
+  	
+}
+
+
+/*the grid for the icons*/
+
+.c1{
+	left:0px;
+}
+
+.c2{
+	left:240px;
+}
+
+.c3{
+	left:480px;
+}
+
+.c4{
+	left:720px;
+}
+
+.c11{
+	left:120px;
+}
+
+.c22{
+	left:360px;
+}
+
+.c33{
+	left:600px;
+}
+
+
+
+.r1{
+	top:30vh;
+}
+
+.r2{
+	top:calc(30vh + calc(1*325px));
+}
+
+.r3{
+	top:calc(30vh + calc(2*325px));
+}
+
+.r4{
+	top:calc(30vh + calc(3*325px));
+}
+
+.r5{
+	top:calc(30vh + calc(4*325px));
+}
+
+.r6{
+	top:calc(30vh + calc(5*325px));
+}
+
+.r7{
+	top:calc(30vh + calc(6*325px));
+}
+
+.r8{
+	top:calc(30vh + calc(7*325px));
+}
+
+.r9{
+	top:calc(30vh + calc(8*325px));
+}
+
+.r10{
+	top:calc(30vh + calc(9*325px));
+}
+
+.r11{
+	top:calc(30vh + calc(10*325px));
+}
+
+.r12{
+	top:calc(30vh + calc(11*325px));
+}
+
+.r13{
+	top:calc(30vh + calc(12*325px));
+}
+
+.r14{
+	top:calc(30vh + calc(13*325px));
+}
+
+.r15{
+	top:calc(30vh + calc(14*325px));
+}
+
+.r16{
+	top:calc(30vh + calc(15*325px));
+}
+
+.r17{
+	top:calc(30vh + calc(16*325px));
+}
+.r18{
+	top:calc(30vh + calc(17*325px));
+}
+.r19{
+	top:calc(30vh + calc(18*325px));
+}
+.r20{
+	top:calc(30vh + calc(19*325px));
+}
+.r21{
+	top:calc(30vh + calc(20*325px));
+}
+.r22{
+	top:calc(30vh + calc(21*325px));
+}
+.r23{
+	top:calc(30vh + calc(22*325px));
+}
+.r24{
+	top:calc(30vh + calc(23*325px));
+}
+.r25{
+	top:calc(30vh + calc(24*325px));
+}
+.r26{
+	top:calc(30vh + calc(25*325px));
+}
+.r27{
+	top:calc(30vh + calc(26*325px));
+}
+.r28{
+	top:calc(30vh + calc(27*325px));
+}
+.r29{
+	top:calc(30vh + calc(28*325px));
+}
+.r30{
+	top:calc(30vh + calc(29*325px));
+}
+.r31{
+	top:calc(30vh + calc(30*325px));
+}
+.r32{
+	top:calc(30vh + calc(31*325px));
+}
+.r33{
+	top:calc(30vh + calc(32*325px));
+}
+.r34{
+	top:calc(30vh + calc(33*325px));
+}
+.r35{
+	top:calc(30vh + calc(34*325px));
+}
+.r36{
+	top:calc(30vh + calc(35*325px));
+}
+.r37{
+	top:calc(30vh + calc(36*325px));
+}
+.r38{
+	top:calc(30vh + calc(37*325px));
+}
+.r39{
+	top:calc(30vh + calc(38*325px));
+}
+.r40{
+	top:calc(30vh + calc(39*325px));
+}
+.r41{
+	top:calc(30vh + calc(40*325px));
+}
+.r42{
+	top:calc(30vh + calc(41*325px));
+}
+.r43{
+	top:calc(30vh + calc(42*325px));
+}
+.r44{
+	top:calc(30vh + calc(43*325px));
+}
+.r45{
+	top:calc(30vh + calc(44*325px));
+}
+.r46{
+	top:calc(30vh + calc(45*325px));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*making it responsive - screen between 1024 and 720px*/
+@media screen and (max-width: 1024px) {
+
+
+	.quote{
+    	font-size: 40px;
+    }
+    .p5{
+    	height: calc(49*220px);
+    }
+
+    .techs{
+    	width: 700px;
+    	margin-left: -350px;
+    }
+	.tech{
+		width: 140px;
+		height: 160px;
+
+
+	}
+
+	.techDetail{
+		
+		width: 700px;
+		margin-left: -350px;
+	}
+	.techcaption{
+		letter-spacing: 3px;
+		font-size: 15px;
+		top:135px;
+	}
+	.treeline2{
+	  	stroke-width: 5;
+	}
+	.treeline1{
+	  	stroke-width: 5;	  	
+	}
+
+	.c1{
+		left:0px;
+	}
+
+	.c2{
+		left:170px;
+	}
+
+	.c3{
+		left:340px;
+	}
+
+	.c4{
+		left:510px;
+	}
+
+	.c11{
+		left:85px;
+	}
+
+	.c22{
+		left:255px;
+	}
+
+	.c33{
+		left:425px;
+	}
+
+
+	.r1{
+		top:30vh;
+	}
+
+	.r2{
+		top:calc(30vh + calc(1*220px));
+	}
+	.r3{
+		top:calc(30vh + calc(2*220px));
+	}
+	.r4{
+		top:calc(30vh + calc(3*220px));
+	}
+	.r5{
+		top:calc(30vh + calc(4*220px));
+	}
+	.r6{
+		top:calc(30vh + calc(5*220px));
+	}
+	.r7{
+		top:calc(30vh + calc(6*220px));
+	}
+	.r8{
+		top:calc(30vh + calc(7*220px));
+	}
+	.r9{
+		top:calc(30vh + calc(8*220px));
+	}
+	.r10{
+		top:calc(30vh + calc(9*220px));
+	}
+	.r11{
+		top:calc(30vh + calc(10*220px));
+	}
+
+	.r12{
+		top:calc(30vh + calc(11*220px));
+	}
+	.r13{
+		top:calc(30vh + calc(12*220px));
+	}
+	.r14{
+		top:calc(30vh + calc(13*220px));
+	}
+	.r15{
+		top:calc(30vh + calc(14*220px));
+	}
+	.r16{
+		top:calc(30vh + calc(15*220px));
+	}
+	.r17{
+		top:calc(30vh + calc(16*220px));
+	}
+	.r18{
+		top:calc(30vh + calc(17*220px));
+	}
+	.r19{
+		top:calc(30vh + calc(18*220px));
+	}
+	.r20{
+		top:calc(30vh + calc(19*220px));
+	}
+	.r21{
+		top:calc(30vh + calc(20*220px));
+	}
+
+	.r22{
+		top:calc(30vh + calc(21*220px));
+	}
+	.r23{
+		top:calc(30vh + calc(22*220px));
+	}
+	.r24{
+		top:calc(30vh + calc(23*220px));
+	}
+	.r25{
+		top:calc(30vh + calc(24*220px));
+	}
+	.r26{
+		top:calc(30vh + calc(25*220px));
+	}
+	.r27{
+		top:calc(30vh + calc(26*220px));
+	}
+	.r28{
+		top:calc(30vh + calc(27*220px));
+	}
+	.r29{
+		top:calc(30vh + calc(28*220px));
+	}
+	.r30{
+		top:calc(30vh + calc(29*220px));
+	}
+	.r31{
+		top:calc(30vh + calc(30*220px));
+	}
+
+	.r32{
+		top:calc(30vh + calc(31*220px));
+	}
+	.r33{
+		top:calc(30vh + calc(32*220px));
+	}
+	.r34{
+		top:calc(30vh + calc(33*220px));
+	}
+	.r35{
+		top:calc(30vh + calc(34*220px));
+	}
+	.r36{
+		top:calc(30vh + calc(35*220px));
+	}
+	.r37{
+		top:calc(30vh + calc(36*220px));
+	}
+	.r38{
+		top:calc(30vh + calc(37*220px));
+	}
+	.r39{
+		top:calc(30vh + calc(38*220px));
+	}
+	.r40{
+		top:calc(30vh + calc(39*220px));
+	}
+	.r41{
+		top:calc(30vh + calc(40*220px));
+	}
+
+	.r42{
+		top:calc(30vh + calc(41*220px));
+	}
+	.r43{
+		top:calc(30vh + calc(42*220px));
+	}
+	.r44{
+		top:calc(30vh + calc(43*220px));
+	}
+	.r45{
+		top:calc(30vh + calc(44*220px));
+	}
+	.r46{
+		top:calc(30vh + calc(45*220px));
+	}
+
+
+
+}
+
+
+/*making it responsive - screen under 720 px*/
+
+@media screen and (max-width: 720px) {
+
+	.quote{
+    	font-size: 20px;
+    }
+    .p5{
+    	height: calc(55*105px);
+    }
+    .intro{
+    	width: 320px;
+    	height: 100%;
+    	margin-left: -160px;
+    }
+    .introp{
+    	font-size: 20px;
+    }
+    .p1tt{
+    	font-size: 50px;
+    }
+
+    .techDetail{
+		
+		width: 95%;
+		margin-left: -47.5%;
+	}
+	.techimgD{
+		width: 120px;
+		position: absolute;
+		top:10px;
+	}
+	.textD{
+		position: absolute;
+		left:10px;
+		top:135px;
+		margin-right: 10px;
+	}
+
+	.xD{
+		position: absolute;
+		right: 10px;
+		top:20px;
+		max-width: 33px;
+	}
+
+	.titleD{
+		display:block;
+		font-family: Raleway;
+		font-weight: 300;
+		color: #FFFFFF;
+		letter-spacing: 10px;
+		font-size: 35px;
+		margin-bottom: 10px;
+
+	}
+	.timeD{
+		display:block;
+		font-family: Raleway;
+		font-weight: 400;
+		color: #FFFFFF;
+		letter-spacing: 5px;
+		font-size: 22px;
+		margin-bottom: 10px;
+	}
+
+	.quoteD{
+		display:block;
+		font-family: Raleway;
+		font-weight: 300;
+		font-style: italic;
+		color: #FFFFFF;
+		font-size: 22px;
+		margin-bottom: 10px;
+	}
+	.detailD{
+		display:block;
+		font-family: Raleway;
+		font-weight: 300;
+		color: #FFFFFF;
+		font-size: 16px;
+		line-height: 22px;
+
+	}
+
+
+
+
+	.techs{
+		width: 296px;
+		margin-left: -148px;
+		
+	}
+
+
+	.tech{
+		width: 65px;
+		height: 75px;
+
+	}
+	.techcaption{
+		letter-spacing: 2px;
+		font-weight: 400;
+		font-size: 10px;
+		top:60px;
+	}
+	.treeline2{
+	  	stroke-width: 3;
+	}
+	.treeline1{
+	  	stroke-width: 3;	  	
+	}
+
+	.c1{
+		left:0px;
+	}
+
+	.c2{
+		left:77px;
+	}
+
+	.c3{
+		left:154px;
+	}
+
+	.c4{
+		left:231px;
+	}
+
+
+	.c11{
+		left:38.5px;
+	}
+
+	.c22{
+		left:115.5px;
+	}
+
+	.c33{
+		left:192.5px;
+	}
+
+
+	.r1{
+		top:30vh;
+	}
+
+	.r2{
+		top:calc(30vh + calc(1*105px));
+	}
+	.r3{
+		top:calc(30vh + calc(2*105px));
+	}
+	.r4{
+		top:calc(30vh + calc(3*105px));
+	}
+	.r5{
+		top:calc(30vh + calc(4*105px));
+	}
+	.r6{
+		top:calc(30vh + calc(5*105px));
+	}
+	.r7{
+		top:calc(30vh + calc(6*105px));
+	}
+	.r8{
+		top:calc(30vh + calc(7*105px));
+	}
+	.r9{
+		top:calc(30vh + calc(8*105px));
+	}
+	.r10{
+		top:calc(30vh + calc(9*105px));
+	}
+	.r11{
+		top:calc(30vh + calc(10*105px));
+	}
+
+	.r12{
+		top:calc(30vh + calc(11*105px));
+	}
+	.r13{
+		top:calc(30vh + calc(12*105px));
+	}
+	.r14{
+		top:calc(30vh + calc(13*105px));
+	}
+	.r15{
+		top:calc(30vh + calc(14*105px));
+	}
+	.r16{
+		top:calc(30vh + calc(15*105px));
+	}
+	.r17{
+		top:calc(30vh + calc(16*105px));
+	}
+	.r18{
+		top:calc(30vh + calc(17*105px));
+	}
+	.r19{
+		top:calc(30vh + calc(18*105px));
+	}
+	.r20{
+		top:calc(30vh + calc(19*105px));
+	}
+	.r21{
+		top:calc(30vh + calc(20*105px));
+	}
+
+	.r22{
+		top:calc(30vh + calc(21*105px));
+	}
+	.r23{
+		top:calc(30vh + calc(22*105px));
+	}
+	.r24{
+		top:calc(30vh + calc(23*105px));
+	}
+	.r25{
+		top:calc(30vh + calc(24*105px));
+	}
+	.r26{
+		top:calc(30vh + calc(25*105px));
+	}
+	.r27{
+		top:calc(30vh + calc(26*105px));
+	}
+	.r28{
+		top:calc(30vh + calc(27*105px));
+	}
+	.r29{
+		top:calc(30vh + calc(28*105px));
+	}
+	.r30{
+		top:calc(30vh + calc(29*105px));
+	}
+	.r31{
+		top:calc(30vh + calc(30*105px));
+	}
+
+	.r32{
+		top:calc(30vh + calc(31*105px));
+	}
+	.r33{
+		top:calc(30vh + calc(32*105px));
+	}
+	.r34{
+		top:calc(30vh + calc(33*105px));
+	}
+	.r35{
+		top:calc(30vh + calc(34*105px));
+	}
+	.r36{
+		top:calc(30vh + calc(35*105px));
+	}
+	.r37{
+		top:calc(30vh + calc(36*105px));
+	}
+	.r38{
+		top:calc(30vh + calc(37*105px));
+	}
+	.r39{
+		top:calc(30vh + calc(38*105px));
+	}
+	.r40{
+		top:calc(30vh + calc(39*105px));
+	}
+	.r41{
+		top:calc(30vh + calc(40*105px));
+	}
+
+	.r42{
+		top:calc(30vh + calc(41*105px));
+	}
+	.r43{
+		top:calc(30vh + calc(42*105px));
+	}
+	.r44{
+		top:calc(30vh + calc(43*105px));
+	}
+	.r45{
+		top:calc(30vh + calc(44*105px));
+	}
+	.r46{
+		top:calc(30vh + calc(45*105px));
+	}
+
+
+}
+
+
